@@ -21,6 +21,7 @@ import { Repeat } from './Repeat'
 import { is } from './is'
 import { fromJS } from './fromJS'
 import { Iterable } from './IterableImpl'
+import { SortedMap } from './SortedMap'
 
 
 export default {
@@ -31,6 +32,7 @@ export default {
   Collection: Collection,
   Map: Map,
   OrderedMap: OrderedMap,
+  SortedMap: SortedMap,
   List: List,
   Stack: Stack,
   Set: Set,

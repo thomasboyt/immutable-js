@@ -773,6 +773,18 @@ declare module Immutable {
   export interface OrderedMap<K, V> extends Map<K, V> {}
 
 
+  export module SortedMap {
+  }
+
+  export function SortedMap<K, V>(): SortedMap<K, V>;
+
+  // TODO: figure out better definitions here
+  export function SortedMap<K, V>(any): SortedMap<K, V>;
+  export function SortedMap<K, V>(any, comparator?: (valueA: V, valueB: V) => number): SortedMap<K, V>;
+
+  export interface SortedMap<K, V> extends OrderedMap<K, V> {}
+
+
   /**
    * A Collection of unique values with `O(log32 N)` adds and has.
    *
