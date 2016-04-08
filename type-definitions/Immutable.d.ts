@@ -496,7 +496,7 @@ declare module Immutable {
      *
      * Equivalent to: `map.set(key, updater(map.get(key, notSetValue)))`.
      */
-    update(updater: (value: Map<K, V>) => Map<K, V>): this;
+    update(updater: (value: this) => this): this;
     update(key: K, updater: (value: V) => V): this;
     update(key: K, notSetValue: V, updater: (value: V) => V): this;
 
